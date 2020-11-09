@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class MonintoringCaseGangguan {
 
-    static ArrayList <PelangganEntity> Dimas06955_Pelanggan = new ArrayList();
-    static ArrayList <CaseGangguanEntity> Dimas06955_CaseGangguan = new ArrayList();
-    static ArrayList <HelpdeskEntity> Dimas06955_Helpdesk = new ArrayList();
+    static ArrayList <PelangganEntity> Pelanggan = new ArrayList();
+    static ArrayList <CaseGangguanEntity> CaseGangguan = new ArrayList();
+    static ArrayList <HelpdeskEntity> Helpdesk = new ArrayList();
     static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -20,13 +20,13 @@ public class MonintoringCaseGangguan {
             System.out.print("Pilihan = "); pil = input.nextInt();
             switch(pil){
                 case 1:
-     //               MenuCaseGangguan();
+                    CaseGangguanEntity.TampilanMenu();
                     break;
                 case 2:
-   //                 MenuPelanggan();
+                    PelangganEntity.TampilanMenu();
                     break;
                 case 3:
- //                   MenuHelpdesk();
+                    HelpdeskEntity.TampilanMenu();
                     break;
                 case 4:
                     System.out.println("Terima Kasih !");
@@ -36,23 +36,5 @@ public class MonintoringCaseGangguan {
                     break;
             }
         }while(pil!=4);
-    }
-    
-    static void MenuCaseGangguan(){
-        int pil;
-        do{
-            System.out.println("Menu Case Gangguan");
-            System.out.println("1. Create Case");
-            System.out.println("2. Edit Case");
-            System.out.println("3. Delete Case");
-            System.out.println("4. Tampilkan Case");
-            System.out.println("5. Kembali");
-            System.out.print("Pilihan = "); pil = input.nextInt();
-            switch(pil){
-                case 1:
-                    
-            }
-        }while(pil!=5);
-        
     }
 }
