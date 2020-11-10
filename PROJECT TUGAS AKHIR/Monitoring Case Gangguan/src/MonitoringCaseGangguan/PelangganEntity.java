@@ -83,5 +83,10 @@ public class PelangganEntity {
         
     }
     
+    public static void TambahSample(){
+        ArrayPelanggan.add(new PelangganEntity(123, "Google", 234, "Jl Pajajaran"));
+        ArrayPelanggan.add(new PelangganEntity(234, "Facebook", 345, "Jl Ir Soekarno"));
+        ArrayPelanggan.add(new PelangganEntity(456, "Apple", 567, "Jl Sulaiman"));
+    }
  }
 

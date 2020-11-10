@@ -77,5 +77,10 @@ public class HelpdeskEntity {
         
     }
     
+    public static void TambahSample(){
+        ArrayHelpdesk.add(new HelpdeskEntity(123, "Helpdesk Jakarta", 234));
+        ArrayHelpdesk.add(new HelpdeskEntity(345, "Helpdesk Surabaya", 456));
+        ArrayHelpdesk.add(new HelpdeskEntity(567, "Helpdesk Semarang", 678));
+    }
  }
 

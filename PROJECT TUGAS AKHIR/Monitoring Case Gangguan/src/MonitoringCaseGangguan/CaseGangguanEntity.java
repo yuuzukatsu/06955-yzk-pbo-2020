@@ -96,5 +96,11 @@ public class CaseGangguanEntity {
         
     }
     
+    public static void TambahSample(){
+        ArrayCaseGangguan.add(new CaseGangguanEntity(1, new Date("02/02/2019"), 123, 234, "Internet Mati"));
+        ArrayCaseGangguan.add(new CaseGangguanEntity(2, new Date("02/02/2019"), 345, 456, "Router Mati"));
+        ArrayCaseGangguan.add(new CaseGangguanEntity(3, new Date("02/02/2019"), 567, 678, "Putus putus"));
+    }
+    
  }
 

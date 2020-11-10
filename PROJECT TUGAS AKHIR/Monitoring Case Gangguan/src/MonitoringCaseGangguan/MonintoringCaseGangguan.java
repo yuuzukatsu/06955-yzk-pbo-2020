@@ -9,14 +9,21 @@ public class MonintoringCaseGangguan {
 
     public static void main(String[] args) {
         System.out.println("Selamat Dtang di Aplikasi Monitoring Case Gangguan");
-        int pil;
+        int Pilihan;
+        
+        //Tambahkan Contoh Sample Data
+        HelpdeskEntity.TambahSample();
+        PelangganEntity.TambahSample();
+        CaseGangguanEntity.TambahSample();
+        //Tambahkan Contoh Sample Data
+        
         do{
             System.out.println("1. List Case Gangguan");
             System.out.println("2. List Pelanggan");
             System.out.println("3. List Helpdesk");
             System.out.println("4. Exit");
-            System.out.print("Pilihan = "); pil = input.nextInt();
-            switch(pil){
+            System.out.print("Pilihan = "); Pilihan = input.nextInt();
+            switch(Pilihan){
                 case 1:
                     CaseGangguanEntity.TampilanMenu();
                     break;
@@ -33,6 +40,6 @@ public class MonintoringCaseGangguan {
                     System.out.println("Input tidak dikenal");
                     break;
             }
-        }while(pil!=4);
+        }while(Pilihan!=4);
     }
 }
