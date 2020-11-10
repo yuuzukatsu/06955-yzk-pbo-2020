@@ -1,12 +1,10 @@
 package MonitoringCaseGangguan;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class MonintoringCaseGangguan {
 
-    static ArrayList <PelangganEntity> Pelanggan = new ArrayList();
-    static ArrayList <CaseGangguanEntity> CaseGangguan = new ArrayList();
-    static ArrayList <HelpdeskEntity> Helpdesk = new ArrayList();
+    
+    
     static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
