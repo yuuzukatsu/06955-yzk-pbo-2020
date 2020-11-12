@@ -1,18 +1,21 @@
-package Dimas06955_MonitoringCaseGangguan;
+package MonitoringCaseGangguan;
 import java.util.Scanner;
 
-public class Dimas06955_MonintoringCaseGangguan {
-   
+public class MonitoringCaseGangguan { 
     static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
         System.out.println("Selamat Dtang di Aplikasi Monitoring Case Gangguan");
-        int Dimas06955_Pilihan;
+        int Pilihan;
+        
+        CaseGangguan CaseGGN = new CaseGangguan();
+        Helpdesk HD = new Helpdesk();
+        Pelanggan PLG = new Pelanggan();
         
         //Tambahkan Contoh Sample Data
-        Dimas06955_HelpdeskEntity.TambahSample();
-        Dimas06955_PelangganEntity.TambahSample();
-        Dimas06955_CaseGangguanEntity.TambahSample();
+        HD.TambahSample();
+        PLG.TambahSample();
+        CaseGGN.TambahSample();
         //Tambahkan Contoh Sample Data
         
         do{
@@ -20,16 +23,16 @@ public class Dimas06955_MonintoringCaseGangguan {
             System.out.println("2. List Pelanggan");
             System.out.println("3. List Helpdesk");
             System.out.println("4. Exit");
-            System.out.print("Pilihan = "); Dimas06955_Pilihan = input.nextInt();
-            switch(Dimas06955_Pilihan){
+            System.out.print("Pilihan = "); Pilihan = input.nextInt();
+            switch(Pilihan){
                 case 1:
-                    Dimas06955_CaseGangguanEntity.TampilanMenu();
+                    CaseGGN.TampilanMenu();
                     break;
                 case 2:
-                    Dimas06955_PelangganEntity.TampilanMenu();
+                    PLG.TampilanMenu();
                     break;
                 case 3:
-                    Dimas06955_HelpdeskEntity.TampilanMenu();
+                    HD.TampilanMenu();
                     break;
                 case 4:
                     System.out.println("Terima Kasih !");
@@ -38,6 +41,6 @@ public class Dimas06955_MonintoringCaseGangguan {
                     System.out.println("Input tidak dikenal");
                     break;
             }
-        }while(Dimas06955_Pilihan!=4);
+        }while(Pilihan!=4);
     }
 }

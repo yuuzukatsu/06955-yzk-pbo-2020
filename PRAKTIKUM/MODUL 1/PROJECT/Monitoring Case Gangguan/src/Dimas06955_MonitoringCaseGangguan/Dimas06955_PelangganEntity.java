@@ -77,7 +77,6 @@ public class Dimas06955_PelangganEntity {
                     break;
                 default:
                     System.out.println("Pilihan tidak dikenali !");
-                    
             }
         }while(Dimas06955_Pilihan!=5);
         

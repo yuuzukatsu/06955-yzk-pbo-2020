@@ -1,20 +1,21 @@
 package MonitoringCaseGangguan;
 import java.util.Scanner;
 
-public class MonintoringCaseGangguan {
-
-    
-    
+public class MonitoringCaseGangguan { 
     static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
         System.out.println("Selamat Dtang di Aplikasi Monitoring Case Gangguan");
         int Pilihan;
         
+        CaseGangguan CaseGGN = new CaseGangguan();
+        Helpdesk HD = new Helpdesk();
+        Pelanggan PLG = new Pelanggan();
+        
         //Tambahkan Contoh Sample Data
-        HelpdeskEntity.TambahSample();
-        PelangganEntity.TambahSample();
-        CaseGangguanEntity.TambahSample();
+        HD.TambahSample();
+        PLG.TambahSample();
+        CaseGGN.TambahSample();
         //Tambahkan Contoh Sample Data
         
         do{
@@ -25,13 +26,13 @@ public class MonintoringCaseGangguan {
             System.out.print("Pilihan = "); Pilihan = input.nextInt();
             switch(Pilihan){
                 case 1:
-                    CaseGangguanEntity.TampilanMenu();
+                    CaseGGN.TampilanMenu();
                     break;
                 case 2:
-                    PelangganEntity.TampilanMenu();
+                    PLG.TampilanMenu();
                     break;
                 case 3:
-                    HelpdeskEntity.TampilanMenu();
+                    HD.TampilanMenu();
                     break;
                 case 4:
                     System.out.println("Terima Kasih !");
