@@ -5,7 +5,7 @@ public class MonitoringCaseGangguan {
     static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        System.out.println("Selamat Dtang di Aplikasi Monitoring Case Gangguan");
+        System.out.println("Selamat Datang di Aplikasi Monitoring Case Gangguan");
         int Pilihan;
         
         CaseGangguan CaseGGN = new CaseGangguan();
