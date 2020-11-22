@@ -7,8 +7,9 @@ import java.util.Scanner;
 
 public class CaseGangguan {
     
-    private final ArrayList <CaseGangguanEntity> ArrayCaseGangguan = new ArrayList();
+    private ArrayList <CaseGangguanEntity> ArrayCaseGangguan = new ArrayList();
     Scanner input = new Scanner(System.in);
+    
     
     public void TampilanMenu(){   
         int Index, Pilihan, NoCase, IdPelanggan, IdHelpdesk;

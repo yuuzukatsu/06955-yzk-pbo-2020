@@ -1,8 +1,8 @@
 package MonitoringCaseGangguan;
 
 public class HelpdeskEntity {
-    private final int IdHelpdesk, Kontak;
-    private final String NamaHelpdesk;
+    private int IdHelpdesk, Kontak;
+    private String NamaHelpdesk;
     
     public HelpdeskEntity(int IdHelpdesk, String NamaHelpdesk, int Kontak){
         this.IdHelpdesk=IdHelpdesk;
