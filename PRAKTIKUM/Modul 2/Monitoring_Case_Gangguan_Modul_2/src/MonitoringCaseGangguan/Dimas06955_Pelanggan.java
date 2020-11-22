@@ -1,10 +1,19 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package MonitoringCaseGangguan;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Pelanggan {
-    private ArrayList <PelangganEntity> ArrayPelanggan = new ArrayList();
+/**
+ *
+ * @author dimdi
+ */
+public class Dimas06955_Pelanggan {
+    ArrayList <Dimas06955_PelangganEntity> ArrayPelanggan = new ArrayList();
     Scanner input = new Scanner(System.in);
     
     public void TampilanMenu(){
@@ -25,7 +34,7 @@ public class Pelanggan {
                     System.out.print("Nama Pelanggan = "); NamaPelanggan = input.next();
                     System.out.print("Kontak         = "); Kontak = input.nextInt();
                     System.out.print("Alamat         = "); Alamat = input.next();
-                    ArrayPelanggan.add(new PelangganEntity(IdPelanggan, NamaPelanggan, Kontak, Alamat));
+                    ArrayPelanggan.add(new Dimas06955_PelangganEntity(IdPelanggan, NamaPelanggan, Kontak, Alamat));
                     break;
                 case 2:
                     //EDIT
@@ -34,7 +43,7 @@ public class Pelanggan {
                     System.out.print("Nama Pelanggan = "); NamaPelanggan = input.next();
                     System.out.print("Kontak         = "); Kontak = input.nextInt();
                     System.out.print("Alamat         = "); Alamat = input.next();
-                    ArrayPelanggan.set(Index, new PelangganEntity(IdPelanggan, NamaPelanggan, Kontak, Alamat));
+                    ArrayPelanggan.set(Index, new Dimas06955_PelangganEntity(IdPelanggan, NamaPelanggan, Kontak, Alamat));
                     
                     break;
                 case 3:
@@ -59,12 +68,14 @@ public class Pelanggan {
                     System.out.println("Pilihan tidak dikenali !");
                     
             }
-        }while(Pilihan!=5);   
+        }while(Pilihan!=5);
+        
     }
     
     public void TambahSample(){
-        ArrayPelanggan.add(new PelangganEntity(123, "Google", 234, "Jl Pajajaran"));
-        ArrayPelanggan.add(new PelangganEntity(234, "Facebook", 345, "Jl Ir Soekarno"));
-        ArrayPelanggan.add(new PelangganEntity(456, "Apple", 567, "Jl Sulaiman"));
+        ArrayPelanggan.add(new Dimas06955_PelangganEntity(123, "Google", 234, "Jl Pajajaran"));
+        ArrayPelanggan.add(new Dimas06955_PelangganEntity(234, "Facebook", 345, "Jl Ir Soekarno"));
+        ArrayPelanggan.add(new Dimas06955_PelangganEntity(456, "Apple", 567, "Jl Sulaiman"));
     }
+    
 }

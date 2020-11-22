@@ -3,9 +3,9 @@ import java.util.Date;
 
 public class CaseGangguanEntity {
 
-    int NoCase,IdPelanggan,IdHelpdesk;
-    Date Tanggal;
-    String Komplain;
+    private int NoCase,IdPelanggan,IdHelpdesk;
+    private Date Tanggal;
+    private String Komplain;
     
     public CaseGangguanEntity(int NoCase, Date Tanggal, int IdPelanggan, int IdHelpdesk, String Komplain){
         this.NoCase=NoCase;
@@ -13,7 +13,6 @@ public class CaseGangguanEntity {
         this.IdPelanggan=IdPelanggan;
         this.IdHelpdesk=IdHelpdesk;
         this.Komplain=Komplain;
-        
     }
     int GetNoCase(){
         return this.NoCase;

@@ -1,20 +1,21 @@
 package MonitoringCaseGangguan;
 import java.util.Scanner;
 
-public class MonitoringCaseGangguan { 
+public class Dimas06955_MonitoringCaseGangguan { 
     static Scanner input = new Scanner(System.in);
+
     public static void main(String[] args) {
         System.out.println("Selamat Datang di Aplikasi Monitoring Case Gangguan");
         int Pilihan;
         
-        CaseGangguan CaseGGN = new CaseGangguan();
-        Helpdesk HD = new Helpdesk();
-        Pelanggan PLG = new Pelanggan();
+        Dimas06955_CaseGangguan Dimas06955_CaseGGN = new Dimas06955_CaseGangguan();
+        Dimas06955_Helpdesk Dimas06955_HD = new Dimas06955_Helpdesk();
+        Dimas06955_Pelanggan Dimas06955_PLG = new Dimas06955_Pelanggan();
         
         //Tambahkan Contoh Sample Data
-        HD.TambahSample();
-        PLG.TambahSample();
-        CaseGGN.TambahSample();
+        Dimas06955_HD.TambahSample();
+        Dimas06955_PLG.TambahSample();
+        Dimas06955_CaseGGN.TambahSample();
         //Tambahkan Contoh Sample Data
         
         do{
@@ -22,17 +23,16 @@ public class MonitoringCaseGangguan {
             System.out.println("2. List Pelanggan");
             System.out.println("3. List Helpdesk");
             System.out.println("4. Exit");
-            System.out.print("Pilihan = ");
-            Pilihan = input.nextInt();
+            System.out.print("Pilihan = "); Pilihan = input.nextInt();
             switch(Pilihan){
                 case 1:
-                    CaseGGN.TampilanMenu();
+                    Dimas06955_CaseGGN.TampilanMenu();
                     break;
                 case 2:
-                    PLG.TampilanMenu();
+                    Dimas06955_PLG.TampilanMenu();
                     break;
                 case 3:
-                    HD.TampilanMenu();
+                    Dimas06955_HD.TampilanMenu();
                     break;
                 case 4:
                     System.out.println("Terima Kasih !");

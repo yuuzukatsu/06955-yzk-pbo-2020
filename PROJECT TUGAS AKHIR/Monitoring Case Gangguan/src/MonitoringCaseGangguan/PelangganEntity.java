@@ -1,8 +1,8 @@
 package MonitoringCaseGangguan;
 
 public class PelangganEntity {
-    int IdPelanggan,Kontak;
-    String NamaPelanggan,Alamat;
+    private int IdPelanggan,Kontak;
+    private String NamaPelanggan,Alamat;
     
     public PelangganEntity(int IdPelanggan, String NamaPelanggan, int Kontak, String Alamat){
         this.IdPelanggan=IdPelanggan;

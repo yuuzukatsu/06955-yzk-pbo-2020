@@ -5,15 +5,17 @@ import java.util.Date;
 import java.util.Scanner;
 
 
-public class CaseGangguan {
+public class Dimas06955_CaseGangguan {
     
-    private final ArrayList <CaseGangguanEntity> ArrayCaseGangguan = new ArrayList();
+    private ArrayList <Dimas06955_CaseGangguanEntity> ArrayCaseGangguan = new ArrayList();
+    private int Index, Pilihan, NoCase, IdPelanggan, IdHelpdesk;
+    private String Komplain;
+    private Date Tanggal;
+    
     Scanner input = new Scanner(System.in);
     
     public void TampilanMenu(){   
-        int Index, Pilihan, NoCase, IdPelanggan, IdHelpdesk;
-        String Komplain;
-        Date Tanggal;
+        
         do{
             System.out.println("Menu Case Gangguan");
             System.out.println("1. Create Case");
@@ -30,7 +32,7 @@ public class CaseGangguan {
                     System.out.print("Id Pelanggan        = "); IdPelanggan = input.nextInt();
                     System.out.print("Id Helpdesk         = "); IdHelpdesk = input.nextInt();
                     System.out.print("Komplain            = "); Komplain = input.next();
-                    ArrayCaseGangguan.add(new CaseGangguanEntity(NoCase, Tanggal, IdPelanggan, IdHelpdesk, Komplain));
+                    ArrayCaseGangguan.add(new Dimas06955_CaseGangguanEntity(NoCase, Tanggal, IdPelanggan, IdHelpdesk, Komplain));
                     break;
                 case 2:
                     //EDIT
@@ -40,7 +42,7 @@ public class CaseGangguan {
                     System.out.print("Id Pelanggan        = "); IdPelanggan = input.nextInt();
                     System.out.print("Id Helpdesk         = "); IdHelpdesk = input.nextInt();
                     System.out.print("Komplain            = "); Komplain = input.next();
-                    ArrayCaseGangguan.set(Index, new CaseGangguanEntity(NoCase, Tanggal, IdPelanggan, IdHelpdesk, Komplain));
+                    ArrayCaseGangguan.set(Index, new Dimas06955_CaseGangguanEntity(NoCase, Tanggal, IdPelanggan, IdHelpdesk, Komplain));
                     
                     break;
                 case 3:
@@ -71,8 +73,8 @@ public class CaseGangguan {
     }
     
     public void TambahSample(){
-        ArrayCaseGangguan.add(new CaseGangguanEntity(1, new Date("02/02/2019"), 123, 234, "Internet Mati"));
-        ArrayCaseGangguan.add(new CaseGangguanEntity(2, new Date("02/02/2019"), 345, 456, "Router Mati"));
-        ArrayCaseGangguan.add(new CaseGangguanEntity(3, new Date("02/02/2019"), 567, 678, "Putus putus"));
+        ArrayCaseGangguan.add(new Dimas06955_CaseGangguanEntity(1, new Date("02/02/2019"), 123, 234, "Internet Mati"));
+        ArrayCaseGangguan.add(new Dimas06955_CaseGangguanEntity(2, new Date("02/02/2019"), 345, 456, "Router Mati"));
+        ArrayCaseGangguan.add(new Dimas06955_CaseGangguanEntity(3, new Date("02/02/2019"), 567, 678, "Putus putus"));
     }
 }

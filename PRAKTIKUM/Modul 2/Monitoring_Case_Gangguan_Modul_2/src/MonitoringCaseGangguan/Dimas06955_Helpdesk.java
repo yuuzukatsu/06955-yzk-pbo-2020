@@ -4,8 +4,8 @@ package MonitoringCaseGangguan;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Helpdesk {
-    private ArrayList <HelpdeskEntity> ArrayHelpdesk = new ArrayList();
+public class Dimas06955_Helpdesk {
+    ArrayList <Dimas06955_HelpdeskEntity> ArrayHelpdesk = new ArrayList();
     Scanner input = new Scanner(System.in);
     public void TampilanMenu(){
         int Index, Pilihan, IdHelpdesk, Kontak;
@@ -24,7 +24,7 @@ public class Helpdesk {
                     System.out.print("Id Helpdesk   = "); IdHelpdesk = input.nextInt();
                     System.out.print("Nama Helpdesk = "); NamaHelpdesk = input.next();
                     System.out.print("Kontak        = "); Kontak = input.nextInt();
-                    ArrayHelpdesk.add(new HelpdeskEntity(IdHelpdesk, NamaHelpdesk, Kontak));
+                    ArrayHelpdesk.add(new Dimas06955_HelpdeskEntity(IdHelpdesk, NamaHelpdesk, Kontak));
                     break;
                 case 2:
                     //EDIT
@@ -32,8 +32,7 @@ public class Helpdesk {
                     System.out.print("Id Helpdesk   = "); IdHelpdesk = input.nextInt();
                     System.out.print("Nama Helpdesk = "); NamaHelpdesk = input.next();
                     System.out.print("Kontak        = "); Kontak = input.nextInt();
-                    ArrayHelpdesk.set(Index, new HelpdeskEntity(IdHelpdesk, NamaHelpdesk, Kontak));
-                    
+                    ArrayHelpdesk.set(Index, new Dimas06955_HelpdeskEntity(IdHelpdesk, NamaHelpdesk, Kontak));
                     break;
                 case 3:
                     //DELETE
@@ -61,8 +60,8 @@ public class Helpdesk {
     }
     
     public void TambahSample(){
-        ArrayHelpdesk.add(new HelpdeskEntity(123, "Helpdesk Jakarta", 234));
-        ArrayHelpdesk.add(new HelpdeskEntity(345, "Helpdesk Surabaya", 456));
-        ArrayHelpdesk.add(new HelpdeskEntity(567, "Helpdesk Semarang", 678));
+        ArrayHelpdesk.add(new Dimas06955_HelpdeskEntity(123, "Helpdesk Jakarta", 234));
+        ArrayHelpdesk.add(new Dimas06955_HelpdeskEntity(345, "Helpdesk Surabaya", 456));
+        ArrayHelpdesk.add(new Dimas06955_HelpdeskEntity(567, "Helpdesk Semarang", 678));
     }
 }
