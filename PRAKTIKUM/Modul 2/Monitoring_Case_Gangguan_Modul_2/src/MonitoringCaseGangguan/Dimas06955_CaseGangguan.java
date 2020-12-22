@@ -1,4 +1,5 @@
 package MonitoringCaseGangguan;
+import Entity.*;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -29,8 +30,24 @@ public class Dimas06955_CaseGangguan {
                     //CREATE
                     System.out.print("Nomor Case          = "); NoCase = input.nextInt();
                     System.out.print("Tanggal(dd/mm/yyyy) = "); Tanggal = new Date(input.next());
-                    System.out.print("Id Pelanggan        = "); IdPelanggan = input.nextInt();
-                    System.out.print("Id Helpdesk         = "); IdHelpdesk = input.nextInt();
+                    
+                    //Dimas06955_Pelanggan Dimas06955_PLG = new Dimas06955_Pelanggan();
+                    System.out.println("==================");
+                    for(int i=0;i<Dimas06955_Pelanggan.ArrayPelanggan.size();i++){
+                        System.out.print(i+". ");
+                        System.out.println(Dimas06955_Pelanggan.ArrayPelanggan.get(i).GetIdPelanggan());
+                    }
+                    System.out.print("Index Id Pelanggan        = "); Index = input.nextInt();
+                    IdPelanggan = Dimas06955_Pelanggan.ArrayPelanggan.get(Index).GetIdPelanggan();
+                    
+                    //Dimas06955_Helpdesk Dimas06955_HD = new Dimas06955_Helpdesk();
+                    System.out.println("==================");
+                    for(int i=0;i<Dimas06955_Helpdesk.ArrayHelpdesk.size();i++){
+                        System.out.print(i+". ");
+                        System.out.println(Dimas06955_Helpdesk.ArrayHelpdesk.get(i).GetIdHelpdesk());
+                    }
+                    System.out.print("Id Helpdesk         = "); Index = input.nextInt();
+                    IdHelpdesk = Dimas06955_Helpdesk.ArrayHelpdesk.get(Index).GetIdHelpdesk();
                     System.out.print("Komplain            = "); Komplain = input.next();
                     ArrayCaseGangguan.add(new Dimas06955_CaseGangguanEntity(NoCase, Tanggal, IdPelanggan, IdHelpdesk, Komplain));
                     break;

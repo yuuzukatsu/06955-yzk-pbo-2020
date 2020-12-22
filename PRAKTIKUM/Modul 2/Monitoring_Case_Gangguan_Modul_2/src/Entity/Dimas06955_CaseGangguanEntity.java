@@ -1,4 +1,4 @@
-package MonitoringCaseGangguan;
+package Entity;
 import java.util.Date;
 
 public class Dimas06955_CaseGangguanEntity {
@@ -15,19 +15,19 @@ public class Dimas06955_CaseGangguanEntity {
         this.Dimas06955_Komplain=Dimas06955_Komplain;
         
     }
-    int GetNoCase(){
+    public int GetNoCase(){
         return this.Dimas06955_NoCase;
     }
-    Date GetTanggal(){
+    public Date GetTanggal(){
         return this.Dimas06955_Tanggal;
     }
-    int GetIdPelanggan(){
+    public int GetIdPelanggan(){
         return this.Dimas06955_IdPelanggan;
     }
-    int GetIdHelpdesk(){
+    public int GetIdHelpdesk(){
         return this.Dimas06955_IdHelpdesk;
     }
-    String GetKomplain(){
+    public String GetKomplain(){
         return this.Dimas06955_Komplain;
     }
  }

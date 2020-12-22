@@ -1,11 +1,12 @@
 
 package MonitoringCaseGangguan;
 
+import Entity.Dimas06955_HelpdeskEntity;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Dimas06955_Helpdesk {
-    ArrayList <Dimas06955_HelpdeskEntity> ArrayHelpdesk = new ArrayList();
+    public static ArrayList <Dimas06955_HelpdeskEntity> ArrayHelpdesk = new ArrayList();
     Scanner input = new Scanner(System.in);
     public void TampilanMenu(){
         int Index, Pilihan, IdHelpdesk, Kontak;

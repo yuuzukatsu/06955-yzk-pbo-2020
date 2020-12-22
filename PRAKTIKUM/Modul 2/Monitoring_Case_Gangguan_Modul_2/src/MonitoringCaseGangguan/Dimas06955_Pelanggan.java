@@ -5,6 +5,7 @@
  */
 package MonitoringCaseGangguan;
 
+import Entity.Dimas06955_PelangganEntity;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -13,7 +14,7 @@ import java.util.Scanner;
  * @author dimdi
  */
 public class Dimas06955_Pelanggan {
-    ArrayList <Dimas06955_PelangganEntity> ArrayPelanggan = new ArrayList();
+    public static ArrayList <Dimas06955_PelangganEntity> ArrayPelanggan = new ArrayList();
     Scanner input = new Scanner(System.in);
     
     public void TampilanMenu(){
