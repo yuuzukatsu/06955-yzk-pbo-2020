@@ -58,6 +58,7 @@ public class CaseGangguan {
 
                         //ArrayCaseGangguan.add(new Dimas06955_CaseGangguanEntity(NoCase, Tanggal, IdPelanggan, IdHelpdesk, Komplain));
                         CaseGGN.Insert(NoCase, Tanggal, IdPelanggan, IdHelpdesk, Komplain);
+                        
                     }catch (Exception exception){
                         System.out.println("Input salah");
                     }
