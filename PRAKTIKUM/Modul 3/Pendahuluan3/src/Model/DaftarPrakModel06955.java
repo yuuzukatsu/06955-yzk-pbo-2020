@@ -21,6 +21,7 @@ public class DaftarPrakModel06955 implements ModelInterfaces06955 {
     @Override
     public void view(){
         for(DaftarPrakEntity06955 daftarprak : daftarPrakArrayList){
+            Object tes = new Object();
             System.out.println("==================");
             System.out.println("NPM : "+daftarprak.getPraktikan().getNpm());
             System.out.println("Nama : "+daftarprak.getPraktikan().getNama());

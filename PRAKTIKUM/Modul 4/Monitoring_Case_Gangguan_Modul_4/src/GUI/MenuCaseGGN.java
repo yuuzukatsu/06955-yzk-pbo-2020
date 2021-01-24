@@ -154,7 +154,7 @@ public class MenuCaseGGN {
         btnEdit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent ae) {
-                final JFrame MenuEdit = new JFrame(); 
+                final JFrame MenuEdit = new JFrame("Edit Case Gangguan"); 
                 MenuEdit.setSize(600,500);
                 MenuEdit.setLayout(null);
         

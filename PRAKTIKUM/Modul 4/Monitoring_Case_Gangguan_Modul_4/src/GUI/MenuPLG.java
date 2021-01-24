@@ -201,6 +201,10 @@ public class MenuPLG {
                 MenuEdit.add(textAlamat);
         
                 JButton btnMenuBack = new JButton("Kembali");
+                lblAlamat = new JLabel("Alamat");
+                lblAlamat.setBounds(20,250,100,20);
+                MenuEdit.add(lblAlamat);
+                
                 btnMenuBack.setBounds(120,350,100,20);
                 MenuEdit.add(btnMenuBack);
                 btnMenuBack.addActionListener(new ActionListener() {
